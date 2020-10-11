@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sem Fronteiras</title>
+		<link rel="manifest" href="manifest.json">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Sem Fronteiras">
+		<meta name="apple-mobile-web-app-title" content="Sem Fronteiras">
+		<meta name="msapplication-starturl" content="/">
+
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<link rel="icon" type="image/png" sizes="512x512" href="homescreen.png">
+		<link rel="apple-touch-icon" type="image/png" sizes="512x512" href="homescreen.png">
+
+		<script>
+			// Registering our Service worker
+			if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js', { scope: './' })
+			}
+		</script>
+	</head>
+	<body style="background-image: url('img/background-1.jpg');">
+		<section>
+			<div class="title">
+				Bem-vindo ao Sem Fronteiras!
+			</div>
+			<div class="form">
+				<label>Endereço de email</label>
+				<input type="email" name="">
+				<label>Senha</label>
+				<input type="password" name="">
+				<label>Não possui conta?</label>
+				<a href="#">Cadastre-se</a>
+				<a href="destino.html" class="btn">Entrar</a>
+			</div>
+		</section>
+	</body>
+</html>

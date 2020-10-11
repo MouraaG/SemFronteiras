@@ -1,0 +1,14 @@
+{
+  "name": "SemFronteiras",
+  "short_name": "Sem Fronteiras",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "homescreen.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
